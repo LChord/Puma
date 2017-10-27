@@ -6,5 +6,8 @@
 <?php // You can add your analystic code to the following hide tag and won't display.?>
 <div class="u-hide"></div>
 <?php wp_footer();?>
+<!-- Social Share -->
+<link href="https://cdn.bootcss.com/social-share.js/1.0.16/css/share.min.css" rel="stylesheet">
+<script src="https://cdn.bootcss.com/social-share.js/1.0.16/js/jquery.share.min.js"></script>
 </body>
 </html>

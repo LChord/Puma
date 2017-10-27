@@ -25,6 +25,7 @@
                 <div class="post--keywords" itemprop="keywords">
                     <?php echo puma_get_the_term_list( get_the_ID(), 'post_tag' );?>
                 </div>
+                <!--
                 <div class="postFooterAction u-clearfix">
                     <?php if(function_exists('wp_postlike')) wp_postlike(get_the_ID(),'<span class="icon-heart"></span>');?>
                     <div class="share-icons" data-title="<?php the_title();?>" data-url="<?php the_permalink();?>">
@@ -33,11 +34,13 @@
                         <span class="icon-sina-weibo" data-type="weibo" title="分享到微博"></span>
                     </div>
                 </div>
+                -->
                 <?php the_post_navigation( array(
                     'next_text' => '<span class="meta-nav">Next</span><span class="post-title">%title</span>',
                     'prev_text' => '<span class="meta-nav">Previous</span><span class="post-title">%title</span>',
                 ) );?>
                 <div class="postFooterinfo u-textAlignCenter">
+                    <!--
                     <?php echo get_avatar(get_the_author_meta('email'),64);?>
                     <h3 class="author-name"><?php the_author();?></h3>
                     <div class="author-description"><?php echo get_the_author_meta('description')?></div>
@@ -49,6 +52,8 @@
                             <span class="author-meta-item"><span class="icon-link"></span><a href="<?php echo get_the_author_meta('url');?>"><?php echo get_the_author_meta('url');?></a></span>
                         <?php endif;?>
                     </div>
+                    -->
+                    <span class="social-share" data-sites="weibo,qq,douban,twitter,google"></span>
                 </div>
                 <?php
                 if ( comments_open() || get_comments_number() ) :

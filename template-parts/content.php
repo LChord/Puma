@@ -3,7 +3,7 @@
         <a href="<?php the_permalink();?>"><?php the_title();?></a>
     </h2>
     <div class="block-postMetaWrap u-textAlignCenter">
-        <time><?php echo get_the_date('Y/m/d');?></time>
+        <time><?php echo get_the_date('Y/m/d');?></time> | <span><?php the_category(',');?></span> | <span><?php echo get_comments_number();?><?php echo __( 'replies', 'puma' );?></span>
     </div>
     <div class="block-snippet block-snippet--subtitle grap" itemprop="about">
         <?php if(has_post_thumbnail()):?>
@@ -22,10 +22,5 @@
             <?php the_content('Read More.');?>
         <?php endif;?>
     </div>
-    <div class="block-footer">
-        By <?php the_author();?> . In <?php the_category(',');?>.
-        <div class="block-footer-inner">
-            <?php if(function_exists('wpl_get_like_count')) echo wpl_get_like_count(get_the_ID()) . ' ' . __( 'likes', 'puma' ) . ' . ';?><?php echo get_comments_number();?> <?php echo __( 'replies', 'puma' );?>.
-        </div>
-    </div>
+    
 </article>
