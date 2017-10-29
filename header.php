@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri();?>/static/img/favicon.ico" type="image/vnd.microsoft.icon">
     
     <meta name="baidu-site-verification" content="u2ViigXTfb" />
-    <!-- Google Analytics -->
+    <!-- Google Analytics 
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -18,8 +18,9 @@
     ga('create', 'UA-107747261-1', 'auto');
     ga('send', 'pageview');
     </script>
-    <!-- End Google Analytics -->
-    <!-- Baidu Tongji -->
+         End Google Analytics -->
+    
+    <!-- Baidu Tongji 
     <script>
     var _hmt = _hmt || [];
     (function() {
@@ -29,7 +30,8 @@
       s.parentNode.insertBefore(hm, s);
     })();
     </script>
-    <!-- End Baidu Tongji -->
+         End Baidu Tongji -->
+    
 </head>
 <body <?php body_class();?>>
 <div class="surface-content">

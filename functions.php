@@ -44,3 +44,12 @@ require get_template_directory() . '/inc/update.php';
  */
 
 require 'inc/tgm-plugin-activation/plugins.php';
+
+function wp_owner_mark($author_link){
+	$comment = get_comment($comment_id);
+	echo $author_link;
+	if(user_can($comment->user_id, 'administrator')){
+		?> <a title="Author" class="admin-tag">admin</a><?php
+	}
+}
+add_filter('get_comment_author_link', 'wp_owner_mark');
